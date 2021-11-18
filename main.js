@@ -138,9 +138,12 @@ var mainState = {
         //Creates In-game sound
         this.explosionSound = game.add.audio('explotar');  
         this.hitSound = this.game.add.audio('hit');
+        this.hitSound.volume = 0.5;
         this.itemSound = this.game.add.audio('item');
+        this.itemSound.volume = 0.4; 
         this.bgSound = this.game.add.audio('bgSound');
         this.brakesSound = this.game.add.audio('brakes');
+        this.brakesSound.volume = 0.8;
         //  Being mp3 files these take time to decode, so we can't play them instantly
         //  Using setDecodedCallback we can be notified when they're ALL ready for use.
         //  The audio files could decode in ANY order, we can never be sure which it'll be.
